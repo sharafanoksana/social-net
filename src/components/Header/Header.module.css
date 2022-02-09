@@ -1,0 +1,12 @@
+.header {
+    grid-area: h;
+    /*background: linear-gradient(to right bottom, rgba(2,53,122,0.76), rgba(198, 216, 250, 0.85));*/
+    /*background: darkseagreen;*/
+    background: #549390;
+}
+
+.header img {
+    width: 30px;
+    color: white;
+    padding-left: 20px;
+}

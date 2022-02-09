@@ -1,0 +1,27 @@
+.nav {
+    grid-area: n;
+    /*background: linear-gradient(to right bottom, rgba(97, 175, 0, 0.76), rgba(240,234,218,0.76));*/
+    background: #549390;
+    padding: 20px;
+}
+.item {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav__list {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a[class="active"]{
+    color: gold;
+}
+
+

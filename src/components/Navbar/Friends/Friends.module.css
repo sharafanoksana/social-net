@@ -1,0 +1,34 @@
+.friendItem {
+    display: inline-block;
+    color: white;
+    /*align-content: center;*/
+}
+.avatar{
+    width: 30px;
+    border-radius: 15px;
+}
+p {
+    margin: 10px 0;
+}
+.friends{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: stretch;
+}
+
+.listFriends{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+}
+
+
+.friends>h3{
+    color: white;
+}

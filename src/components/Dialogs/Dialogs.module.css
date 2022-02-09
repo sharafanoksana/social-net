@@ -1,0 +1,74 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.dialogsItems {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: white solid 3px;
+    padding: 25px 0 0 20px;
+}
+
+p {
+    display: inline-grid;
+}
+
+.dialog {
+}
+
+img {
+    margin-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.dialogsItems a[class="active"] {
+    color: gold;
+    background: rgba(84, 147, 144, 1);
+    border-radius: 0 25px 25px 0;
+    padding: 10px 20px 12px;
+    margin-left: -20px;
+}
+
+.dialogsItems a {
+    color: rgba(27, 49, 42, 0.76);
+    text-decoration: none;
+}
+
+.avatar{
+    width: 30px;
+    border-radius: 15px;
+}
+
+.messagesItems {
+    padding: 20px;
+}
+
+textarea{
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 5px 20px;
+}
+
+.message {
+    margin: 10px;
+    background: white;
+    border-radius: 15px 15px 15px 0px;
+    padding: 5px 15px;
+    min-width: 100px;
+
+}
+.message1 {
+    margin: 10px;
+    display: grid;
+    min-width: 100px;
+    text-align: right;
+    background: honeydew;
+    border-radius: 15px 15px 0px 15px;
+    padding: 5px 15px;
+}
