@@ -6,31 +6,21 @@ import Dialogs from "./components/Dialogs/Dialogs";
 import {Outlet, Route, Routes} from "react-router-dom";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 
-function App(props) {
+function App() {
     return (
         <Routes>
             <Route path={'/'}
                    element={
-                       <Layout friends={props.appState.sidebar}/>
-                   }
-            >
+                       <Layout />
+                   }>
                 <Route path={'/profile'}
                        element={
-                           <Profile
-                               // profilePage={props.appState.profilePage}
-                               // dispatch={props.dispatch}
-                               store={props.store}
-                           />
+                           <Profile/>
                        }/>
                 <Route path={'/dialogs/*'}
                        element={
-                           <DialogsContainer
-                               store={props.store}
-                               // dispatch={props.dispatch}
-                               // dialogsPage={props.appState.dialogsPage}
-                           />
-                       }
-                >
+                           <DialogsContainer/>
+                       }>
                     {/*<Route path={'/1'} component={User}/>*/}
                 </Route>
             </Route>
@@ -38,11 +28,11 @@ function App(props) {
     );
 }
 
-function Layout(props) {
+function Layout() {
     return (
         <div className={'app-wrapper'}>
             <Header/>
-            <Navbar friends={props.friends.friendData}/>
+            <Navbar/>
             <div className={'app-wrapper-content'}>
                 <Outlet/>
             </div>

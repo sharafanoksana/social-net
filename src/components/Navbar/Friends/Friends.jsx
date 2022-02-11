@@ -3,7 +3,7 @@ import FriendItem from "./FriendItem";
 import classes from './Friends.module.css'
 
 const Friends = (props) => {
-    console.log(props)
+
     let friends = props.friends.map((el) => {
         return (<FriendItem avatar={el.avatar} name={el.name}/>)
     });

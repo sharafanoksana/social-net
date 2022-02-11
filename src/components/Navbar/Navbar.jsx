@@ -2,8 +2,10 @@ import React from "react";
 import classes from "./Navbar.module.css";
 import {NavLink} from "react-router-dom";
 import Friends from "./Friends/Friends";
+import StoreContext from "../../StoreContext";
+import FriendsContainer from "./Friends/FriendsContainer";
 
-const Navbar = (props) => {
+const Navbar = () => {
 
     return (
         <nav className={classes.nav}>
@@ -24,7 +26,12 @@ const Navbar = (props) => {
                     <NavLink to={'/settings'}>Settings</NavLink>
                 </li>
             </ul>
-            <Friends friends={props.friends}/>
+            <FriendsContainer/>
+            {/*<StoreContext.Consumer>*/}
+            {/*    { store => {*/}
+            {/*        return <Friends friends={store.sidebar.friendData}/>*/}
+            {/*    }}*/}
+            {/*</StoreContext.Consumer>*/}
         </nav>
     );
 }
