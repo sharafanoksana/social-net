@@ -2,18 +2,16 @@ import React, {useRef} from "react";
 import classes from "./Dialogs.module.css";
 import DialogItem from "./DialogItem/DialogItem";
 import MessageItem from "./MessageItem/MessageItem";
-// import {addMessageActionCreator, updateNewMessageTextActionCreator} from "../../redux/dialogsReducer";
 
 const Dialogs = (props) => {
-    // let state = props.dialogsData;
 
     let dialogsItems = props.dialogsData.map((dialog) => {
-        return (<DialogItem id={dialog.id} name={dialog.name} avatar={dialog.avatar}/>);
+        return (<DialogItem id={dialog.id} name={dialog.name} avatar={dialog.avatar} key={dialog.id}/>);
     });
 
-    let messages = props.messeges.map((item) => {
+    let messages = props.messages.map((item) => {
        return (
-           <MessageItem message={item.message} idUser={item.idUser}/>
+           <MessageItem message={item.message} idUser={item.idUser} key={item.id}/>
        );
     });
 

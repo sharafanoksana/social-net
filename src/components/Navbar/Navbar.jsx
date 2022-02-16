@@ -27,11 +27,6 @@ const Navbar = () => {
                 </li>
             </ul>
             <FriendsContainer/>
-            {/*<StoreContext.Consumer>*/}
-            {/*    { store => {*/}
-            {/*        return <Friends friends={store.sidebar.friendData}/>*/}
-            {/*    }}*/}
-            {/*</StoreContext.Consumer>*/}
         </nav>
     );
 }
